@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ef476f"/>
+      <stop offset="1" stop-color="#8338ec"/>
+    </linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <circle cx="160" cy="150" r="115" fill="#fff" opacity=".10"/>
+  <circle cx="1050" cy="170" r="165" fill="#fff" opacity=".08"/>
+  <circle cx="980" cy="790" r="220" fill="#fff" opacity=".08"/>
+  <g transform="translate(600 345)" filter="url(#s)">
+    <path d="M0 180C-35 142-245-5-245-170C-245-320-60-340 0-205C60-340 245-320 245-170C245-5 35 142 0 180Z" fill="#fff" opacity=".95"/>
+  </g>
+  <text x="600" y="670" text-anchor="middle" font-family="Segoe UI,Arial" font-size="62" font-weight="700" fill="#fff">Per&#195;&#186; y Argentina</text>
+  <text x="600" y="735" text-anchor="middle" font-family="Segoe UI,Arial" font-size="31" fill="#fff" opacity=".92">Dos pa&#195;&#173;ses, una historia que reci&#195;&#169;n comienza</text>
+</svg>
