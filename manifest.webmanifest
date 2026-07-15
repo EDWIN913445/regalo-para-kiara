@@ -1,9 +1,9 @@
-﻿{
-  "name": "Para Kiara, desde PerÃº",
+{
+  "name": "Para Kiara, desde Perú",
   "short_name": "Para Kiara",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#fff1f6",
   "theme_color": "#8b1e5b",
-  "description": "Un regalo especial entre PerÃº y Argentina."
+  "description": "Un regalo especial entre Perú y Argentina."
 }

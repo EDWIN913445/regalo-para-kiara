@@ -1,4 +1,4 @@
-﻿"use strict";
+"use strict";
 const welcome=document.querySelector("#welcome");
 const site=document.querySelector("#site");
 const openGift=document.querySelector("#openGift");
@@ -29,7 +29,7 @@ window.onYouTubeIframeAPIReady=function(){
 };
 
 function burst(amount=28){
-  const symbols=["ðŸ’—","ðŸ’–","ðŸ’•","â™¥","âœ¨"];
+  const symbols=["💗","💖","💕","â™¥","✨"];
   for(let i=0;i<amount;i++){
     const h=document.createElement("span");
     h.className="heart";
@@ -65,13 +65,13 @@ musicButton.addEventListener("click",()=>{
 });
 
 shareButton.addEventListener("click",async()=>{
-  const data={title:"Para Kiara ðŸ’—",text:"AbrÃ­ este regalo que viajÃ³ desde PerÃº hasta Argentina.",url:location.href};
+  const data={title:"Para Kiara 💗",text:"Abrí este regalo que viajó desde Perú hasta Argentina.",url:location.href};
   try{if(navigator.share){await navigator.share(data)}else{await navigator.clipboard.writeText(location.href);shareButton.textContent="Enlace copiado";setTimeout(()=>shareButton.textContent="Compartir",1800)}}catch{}
 });
 
 finalButton.addEventListener("click",()=>{
   finalMessage.hidden=false;
-  finalButton.textContent="Nos veremos en Argentina ðŸ‡¦ðŸ‡·";
+  finalButton.textContent="Nos veremos en Argentina 🇦🇷";
   burst(55);
   finalMessage.scrollIntoView({behavior:"smooth",block:"center"});
 });
