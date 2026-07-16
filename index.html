@@ -746,6 +746,7 @@ body.login-locked {
 
 /* LOGIN-KIARA-CSS-FIN */
 </style>
+<link rel="stylesheet" href="paulo-video.css?v=10">
 </head>
 
 <body class="login-locked">
@@ -914,29 +915,48 @@ body.login-locked {
         </section>
 
         <section class="section song" id="cancion">
-            <div class="song-copy">
-                <p class="eyebrow">NUESTRA CANCI&Oacute;N</p>
-                <h2>Por Primera Vez</h2>
-                <p>Camilo y Evaluna</p>
+    <div class="song-copy">
+        <p class="eyebrow">NUESTRA CANCI&Oacute;N</p>
 
-                <button class="primary" id="playSong" type="button">
-                    Escuchar la canci&oacute;n
-                </button>
+        <h2>Ad&aacute;n y Eva</h2>
 
-                <p id="musicMessage">
-                    La canci&oacute;n se cargar&aacute; despu&eacute;s de pulsar el bot&oacute;n.
-                </p>
-            </div>
+        <p>Paulo Londra</p>
 
-            <div class="video">
-                <iframe
-                    id="songFrame"
-                    title="Por Primera Vez - Camilo y Evaluna"
-                    allow="autoplay; encrypted-media; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
+        <button
+            class="primary"
+            id="playPauloVideo"
+            type="button"
+        >
+            Ver nuestro video
+        </button>
+
+        <p
+            class="paulo-video-note"
+            id="pauloVideoMessage"
+        >
+            Pulsa el bot&oacute;n para reproducirlo sin anuncios.
+        </p>
+    </div>
+
+    <div class="paulo-video-card">
+        <div class="paulo-video-wrap">
+            <video
+                class="paulo-video-player"
+                id="pauloVideo"
+                controls
+                playsinline
+                preload="metadata"
+            >
+                <source
+                    src="assets/video/adan-y-eva.mp4?v=10"
+                    type="video/mp4"
+                >
+
+                Tu navegador no puede reproducir este video.
+            </video>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer>
@@ -1040,5 +1060,6 @@ body.login-locked {
 /* LOGIN-KIARA-JS-FIN */
 </script>
 <script src="clave-minena.js?v=4"></script>
+<script src="paulo-video.js?v=10"></script>
 </body>
 </html>
