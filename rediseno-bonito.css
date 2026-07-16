@@ -1,0 +1,165 @@
+:root{
+  --rosa:#ff4f91;
+  --rosa2:#ff8fbd;
+  --morado:#9b55e8;
+  --tinta:#321521;
+  --texto:#755665;
+  --borde:rgba(132,58,94,.14);
+  --sombra:0 22px 65px rgba(87,27,56,.13);
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  color:var(--tinta)!important;
+  background:
+    radial-gradient(circle at 8% 10%,rgba(255,79,145,.13),transparent 24%),
+    radial-gradient(circle at 90% 15%,rgba(155,85,232,.12),transparent 23%),
+    radial-gradient(circle at 18% 88%,rgba(255,191,221,.22),transparent 22%),
+    linear-gradient(135deg,#fff9fc 0%,#fdf3f8 52%,#f7efff 100%)!important;
+  overflow-x:hidden;
+}
+
+body:before,body:after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  width:340px;
+  height:340px;
+  border-radius:50%;
+  filter:blur(22px);
+  pointer-events:none;
+}
+body:before{top:-120px;left:-100px;background:rgba(255,79,145,.09)}
+body:after{right:-110px;bottom:-120px;background:rgba(155,85,232,.09)}
+
+h1,h2,h3,h4{color:var(--tinta)!important;letter-spacing:-.035em}
+p,li,small{color:var(--texto)}
+
+header,.topbar,.site-header,.navbar{
+  background:rgba(255,250,253,.78)!important;
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(132,58,94,.10)!important;
+  box-shadow:0 10px 28px rgba(87,27,56,.05)
+}
+
+nav a,header nav a,.topbar nav a{
+  border:1px solid rgba(132,58,94,.14)!important;
+  border-radius:999px!important;
+  background:rgba(255,255,255,.80)!important;
+  padding:10px 16px!important;
+  box-shadow:0 8px 20px rgba(87,27,56,.05);
+  transition:.22s ease
+}
+nav a:hover,header nav a:hover,.topbar nav a:hover{
+  transform:translateY(-2px);
+  background:#fff!important;
+  box-shadow:0 12px 24px rgba(87,27,56,.09)
+}
+
+button,.primary,button.primary,input[type=submit]{
+  background:linear-gradient(135deg,var(--rosa) 0%,#e54593 48%,var(--morado) 100%)!important;
+  color:#fff!important;
+  border:0!important;
+  border-radius:999px!important;
+  box-shadow:0 14px 30px rgba(229,69,147,.24);
+  transition:.2s ease
+}
+button:hover,.primary:hover,button.primary:hover,input[type=submit]:hover{
+  transform:translateY(-2px) scale(1.01);
+  box-shadow:0 18px 36px rgba(229,69,147,.30)
+}
+
+.card,.login-card,.song-message-card,.paulo-video-card,.story-card,.promise-card,.memory-card,.hero-card,article,.grid>div,.grid>article{
+  background:rgba(255,255,255,.72)!important;
+  backdrop-filter:blur(15px);
+  border:1px solid var(--borde)!important;
+  border-radius:30px!important;
+  box-shadow:var(--sombra)!important;
+  transition:.22s ease
+}
+.card:hover,.song-message-card:hover,.paulo-video-card:hover,.story-card:hover,.promise-card:hover,.memory-card:hover,.hero-card:hover,article:hover{
+  transform:translateY(-3px);
+  box-shadow:0 28px 78px rgba(87,27,56,.16)!important
+}
+
+section,.section{position:relative}
+
+.hero:after,.intro:after,.main-hero:after,.home-hero:after{
+  content:"\\2665";
+  position:absolute;
+  top:5px;
+  right:clamp(18px,6vw,80px);
+  font-size:26px;
+  color:var(--rosa);
+  opacity:.16;
+  transform:rotate(-12deg)
+}
+
+.song,#cancion{gap:clamp(28px,5vw,56px);align-items:center}
+.song-copy h1,.song-copy h2,#cancion h1,#cancion h2{
+  font-size:clamp(3.2rem,7vw,5.8rem)!important;
+  line-height:.92!important;
+  margin-bottom:16px!important
+}
+.song-copy p:first-child,#cancion p:first-child,.song-copy .eyebrow{
+  color:var(--rosa)!important;
+  letter-spacing:.28em!important;
+  text-transform:uppercase;
+  font-weight:800
+}
+
+.paulo-video-card{
+  padding:18px!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.90),rgba(255,248,252,.86))!important;
+  box-shadow:0 28px 78px rgba(87,27,56,.16)!important
+}
+.paulo-video-wrap,video{border-radius:24px!important;overflow:hidden}
+
+.song-message-card{
+  padding:clamp(28px,4vw,46px)!important;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(255,79,145,.12),transparent 24%),
+    radial-gradient(circle at 0% 100%,rgba(155,85,232,.10),transparent 24%),
+    rgba(255,255,255,.78)!important
+}
+.song-message-card:before{
+  content:"Para mi nena bonita";
+  position:absolute;
+  top:18px;
+  right:24px;
+  color:rgba(229,69,147,.62);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase
+}
+.song-message-card p{line-height:1.85}
+
+input[type=password],input[type=text],input[type=email]{
+  background:rgba(255,255,255,.90)!important;
+  border:1px solid rgba(193,97,142,.27)!important;
+  border-radius:18px!important;
+  box-shadow:inset 0 1px 2px rgba(87,27,56,.04)
+}
+input[type=password]:focus,input[type=text]:focus,input[type=email]:focus{
+  outline:none;
+  border-color:rgba(255,79,145,.48)!important;
+  box-shadow:0 0 0 5px rgba(255,79,145,.10)
+}
+
+footer,.site-footer{padding-bottom:38px}
+footer:before,.site-footer:before{
+  content:"";
+  display:block;
+  width:min(180px,32vw);
+  height:4px;
+  margin:0 auto 18px;
+  border-radius:999px;
+  background:linear-gradient(90deg,rgba(255,79,145,.12),rgba(255,79,145,.75),rgba(155,85,232,.75),rgba(155,85,232,.12))
+}
+
+@media(max-width:700px){
+  .card,.login-card,.song-message-card,.paulo-video-card,article{border-radius:22px!important}
+  .song-copy h1,.song-copy h2,#cancion h1,#cancion h2{font-size:clamp(2.7rem,13vw,4rem)!important}
+  .song-message-card:before{position:static;display:block;margin-bottom:12px}
+}
