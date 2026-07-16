@@ -1,131 +1,148 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#8b1e5b">
-  <meta name="description" content="Una historia bonita entre Perú y Argentina, creada especialmente para Kiara.">
-  <title>Para Kiara, desde Perú 💗</title>
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#ff4f87">
+    <title>Para mi nena bonita</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div id="hearts" aria-hidden="true"></div>
 
-  <section id="welcome" class="welcome">
-    <div class="aurora a1"></div><div class="aurora a2"></div>
-    <div class="welcome-card">
-      <div class="flags" aria-label="Perú y Argentina"><span>🇵🇪</span><i>â™¥</i><span>🇦🇷</span></div>
-      <p class="eyebrow">UN REGALO QUE VIAJÓ MUCHOS KILÓMETROS</p>
-      <h1>Para <em>Kiara</em>,<br>desde Perú</h1>
-      <p class="lead">No pude envolver todo lo que siento, así que lo convertí en una pequeña página para ti.</p>
-      <button id="openGift" class="primary">Abrir nuestro regalo <span>💌</span></button>
-      <small>La música comenzará cuando presiones el botón.</small>
+    <div class="franja-superior">
+        <p>Hecho con cari&ntilde;o desde Per&uacute; para mi nena bonita, en Argentina.</p>
     </div>
-  </section>
 
-  <main id="site" hidden>
     <header class="topbar">
-      <a class="brand" href="#inicio">K + <span>â™¥</span></a>
-      <div class="top-actions">
-        <button id="musicButton" class="round" aria-label="Pausar o reproducir música">â™«</button>
-        <button id="shareButton" class="share">Compartir</button>
-      </div>
+        <div class="brand">Para mi nena bonita</div>
+        <div class="top-actions">
+            <a class="share-btn" href="#cancion">Nuestra canci&oacute;n</a>
+        </div>
     </header>
 
-    <section id="inicio" class="hero section">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">DOS PAÍSES · UNA HISTORIA</p>
-        <h2>La distancia se mide en kilómetros.<br><em>Lo nuestro, en ganas.</em></h2>
-        <p>Kiara, quizá hoy estemos en países diferentes, pero cada conversación, cada risa y cada pequeño detalle hace que Argentina se sienta un poco más cerca de Perú.</p>
-        <a href="#historia" class="secondary">Seguir leyendo â†“</a>
-      </div>
-      <div class="route-card reveal">
-        <div class="country"><b>🇵🇪</b><span>Perú</span><small>Donde estoy yo</small></div>
-        <div class="route"><span></span><i>âœˆ</i><span></span></div>
-        <div class="country"><b>🇦🇷</b><span>Argentina</span><small>Donde estás tú</small></div>
-        <p>Algún día este camino dejará de ser una línea en una pantalla.</p>
-      </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <p class="eyebrow">UN REGALO ESPECIAL PARA TI</p>
+                <h1>
+                    La distancia se mide en kil&oacute;metros.<br>
+                    <span>Lo nuestro, en ganas.</span>
+                </h1>
+                <p class="lead">
+                    Kiara, quiz&aacute; hoy estemos en pa&iacute;ses diferentes,
+                    pero cada conversaci&oacute;n, cada risa y cada peque&ntilde;o detalle
+                    hace que Argentina se sienta un poco m&aacute;s cerca de Per&uacute;.
+                </p>
 
-    <section id="historia" class="story section">
-      <div class="section-head reveal">
-        <p class="eyebrow">LO QUE ESTAMOS CONSTRUYENDO</p>
-        <h2>Una relación bonita,<br>sin necesidad de apresurarla</h2>
-      </div>
-      <div class="story-grid">
-        <article class="story-card reveal"><span>01</span><h3>Nos encontramos</h3><p>Entre tantos lugares y tantas personas, coincidimos nosotros. Y esa coincidencia empezó a sentirse especial.</p></article>
-        <article class="story-card reveal"><span>02</span><h3>Nos elegimos cada día</h3><p>A pesar de la distancia, seguimos hablando, conociéndonos y cuidando esta historia de una forma sincera.</p></article>
-        <article class="story-card reveal"><span>03</span><h3>Tenemos un sueño</h3><p>Algún día Argentina dejará de ser solo un lugar en el mapa: será el lugar donde por fin podamos encontrarnos y darnos ese abrazo pendiente.</p></article>
-      </div>
-    </section>
+                <div class="acciones">
+                    <button class="btn-primary" id="abrirRegalo" type="button">
+                        Abrir nuestro regalo
+                    </button>
+                    <a class="btn-secondary" href="#historia">
+                        Seguir leyendo
+                    </a>
+                </div>
+            </div>
 
-    <section class="gallery section">
-      <div class="section-head reveal">
-        <p class="eyebrow">RECUERDOS Y SUEÑOS</p>
-        <h2>Esto recién comienza</h2>
-      </div>
-      <div class="photos">
-        <figure class="photo p1 reveal"><img src="assets/foto1.svg" alt="Un recuerdo especial"><figcaption><b>Lo que ya tenemos</b><span>Conversaciones que alegran el día.</span></figcaption></figure>
-        <figure class="photo p2 reveal"><img src="assets/foto2.svg" alt="La distancia entre Perú y Argentina"><figcaption><b>Lo que cuidamos</b><span>Una conexión que merece paciencia.</span></figcaption></figure>
-        <figure class="photo p3 reveal"><img src="assets/foto3.svg" alt="El futuro encuentro en Argentina"><figcaption><b>Lo que nos espera</b><span>El abrazo que todavía nos debemos.</span></figcaption></figure>
-      </div>
-    </section>
+            <div class="hero-card">
+                <div class="heart big-heart"></div>
+                <div class="ruta">
+                    <span>Per&uacute;</span>
+                    <span class="linea"></span>
+                    <span>Argentina</span>
+                </div>
+            </div>
+        </section>
 
-    <section class="special section">
-      <div class="special-box reveal">
-        <p class="eyebrow">UN REGALO ESPECIAL</p>
-        <h2>Kiara</h2>
-        <p class="special-phrase">No necesito saber la fecha exacta para saber que quiero vivir ese momento contigo.</p>
-        <div class="distance-line" aria-hidden="true"><span>🇵🇪</span><i>â™¥</i><span>🇦🇷</span></div>
-        <p>Hoy nos separan kilómetros, pero también nos unen conversaciones, cariño, paciencia y las ganas de conocernos de verdad.</p>
-      </div>
-    </section>
+        <section class="section" id="historia">
+            <div class="section-title">
+                <p class="eyebrow">NUESTRA HISTORIA</p>
+                <h2>Lo que empez&oacute; sin avisar</h2>
+            </div>
 
-    <section class="promises section">
-      <div class="section-head reveal">
-        <p class="eyebrow">MI PEQUEÑA PROMESA</p>
-        <h2>Hasta que llegue ese día…</h2>
-      </div>
-      <div class="promise-list reveal">
-        <p><span>01</span>Seguir conociéndote de verdad, sin fingir y sin apresurarnos.</p>
-        <p><span>02</span>Cuidar esta conexión incluso cuando los días sean complicados.</p>
-        <p><span>03</span>Hacer todo lo posible para que nuestro encuentro en Argentina se convierta en realidad.</p>
-      </div>
-    </section>
+            <div class="cards-grid">
+                <article class="card card-big pink-purple">
+                    <div class="heart mini-heart"></div>
+                    <div class="card-content">
+                        <h3>Nos conocimos en un juego</h3>
+                        <p>Y sin darme cuenta, poco a poco me fuiste enamorando.</p>
+                    </div>
+                </article>
 
-    <section class="letter section">
-      <div class="letter-card reveal">
-        <div class="seal">K</div>
-        <p class="eyebrow">UNA CARTA PARA TI</p>
-        <h2>Kiara:</h2>
-        <div class="letter-text">
-          <p>No sé exactamente en qué momento nuestras conversaciones comenzaron a importarme tanto, pero me alegra que haya ocurrido.</p>
-          <p>Me gusta la relación bonita que estamos formando. Me gusta saber que, aunque tú estés en Argentina y yo en Perú, logramos encontrar maneras de acompañarnos.</p>
-          <p>No quiero prometerte una historia perfecta. Quiero prometerte algo más real: sinceridad, paciencia, cariño y las ganas de hacer que nuestro encuentro no se quede solo como un sueño.</p>
-          <p>Imagino el momento de verte por primera vez, reconocer tu voz sin una pantalla de por medio y finalmente darte ese abrazo que hoy tiene miles de kilómetros de distancia.</p>
-          <p>Gracias por llegar a mi vida, Kiara. Esta página es pequeña comparada con todo lo que quisiera decirte, pero está hecha de corazón.</p>
-        </div>
-        <p class="signature">Con mucho cariño,<br><strong>DANIEL</strong> 🇵🇪</p>
-        <button id="finalButton" class="primary">Presiona aquí, Kiara 💗</button>
-        <p id="finalMessage" class="final-message" hidden>Argentina nos espera. Y yo también espero por ti. 🇵🇪💗🇦🇷</p>
-      </div>
-    </section>
+                <article class="card coral">
+                    <div class="card-content">
+                        <h3>Lo que me haces sentir</h3>
+                        <p>Tu forma de hablarme, de re&iacute;r y de estar conmigo me encanta.</p>
+                    </div>
+                </article>
 
-    <section class="song-section section">
-      <div class="song-card reveal">
-        <p class="eyebrow">NUESTRA CANCIÓN</p>
-        <h2>Por Primera Vez</h2>
-        <p>Camilo y Evaluna</p>
-        <div class="video-wrap"><div id="youtubePlayer"></div></div>
-        <small>La música se reproduce desde YouTube. Si el navegador no la inicia automáticamente, presiona reproducir en el video.</small>
-      </div>
-    </section>
+                <article class="card purple">
+                    <div class="card-content">
+                        <h3>Lo que sue&ntilde;o contigo</h3>
+                        <p>Que alg&uacute;n d&iacute;a nuestro encuentro en Argentina se vuelva realidad.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <footer><span>Hecho con cariño desde Perú para Kiara, en Argentina.</span><b>🇵🇪 â™¥ 🇦🇷</b></footer>
-  </main>
+        <section class="section promise-section">
+            <div class="section-title">
+                <p class="eyebrow">LO QUE QUIERO DECIRTE</p>
+                <h2>Para ti, Kiara</h2>
+            </div>
 
-  <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="script.js"></script>
+            <div class="carta">
+                <p>
+                    A veces uno no planea sentir algo tan bonito por alguien,
+                    y aun as&iacute; pasa. Contigo me pas&oacute; eso.
+                </p>
+                <p>
+                    Nos conocimos en un juego, empezamos a hablar y,
+                    sin esperarlo, me fuiste enamorando con tu forma de ser.
+                </p>
+                <p>
+                    Me gustas por c&oacute;mo me haces sentir, por nuestras conversaciones
+                    y por esta conexi&oacute;n tan bonita que hemos ido creando entre Per&uacute; y Argentina.
+                </p>
+                <p>
+                    Y aunque todav&iacute;a no llegue el momento de vernos,
+                    me encanta imaginar todo lo bonito que nos espera.
+                </p>
+                <p class="firma">Con cari&ntilde;o, Daniel.</p>
+            </div>
+        </section>
+
+        <section class="section" id="cancion">
+            <div class="section-title">
+                <p class="eyebrow">NUESTRA CANCI&Oacute;N</p>
+                <h2>Por Primera Vez</h2>
+                <p class="song-sub">Camilo y Evaluna</p>
+            </div>
+
+            <div class="music-box">
+                <button class="btn-primary" id="playSong" type="button">
+                    Escuchar la canci&oacute;n
+                </button>
+                <p class="music-note" id="musicNote">
+                    La m&uacute;sica se cargar&aacute; cuando presiones el bot&oacute;n.
+                </p>
+
+                <div class="video-wrap">
+                    <iframe
+                        id="songFrame"
+                        title="Por Primera Vez - Camilo y Evaluna"
+                        allow="autoplay; encrypted-media; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Para mi nena bonita, con mucho cari&ntilde;o.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
